@@ -1,0 +1,75 @@
+1) (https://dontpad.com/camillo/fp)
+
+
+using System.Text;
+
+static bool EhVogal(char c)
+{
+    string vogais = "aeiouAEIOU";
+
+    for (int i = 0; i < vogais.Length; i++)
+    {
+        if (vogais[i] == c)
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+static string ConverterParaMaiusculas(string texto)
+{
+    StringBuilder sb = new StringBuilder();
+
+    for (int i = 0; i < texto.Length; i++)
+    {
+        if (texto[i] >= 'a' && texto[i] <= 'z')
+        {
+            sb.Append(Convert.ToChar(texto[i] - 'a' + 'A'));
+        }
+        else
+        {
+            sb.Append(texto[i]);
+        }
+    }
+
+    return sb.ToString();
+}
+
+static string ConverterParaMinusculas(string texto)
+{
+    StringBuilder sb = new StringBuilder();
+
+    for (int i = 0; i < texto.Length; i++)
+    {
+        if (texto[i] >= 'A' && texto[i] <= 'Z')
+        {
+            sb.Append(Convert.ToChar(texto[i] - 'A' + 'a'));
+        }
+        else
+        {
+            sb.Append(texto[i]);
+        }
+    }
+
+    return sb.ToString();
+}
+
+static string ConverterTexto(string texto)
+{
+    if (EhVogal(texto[0]))
+    {
+        return ConverterParaMaiusculas(texto);
+    }
+    else
+    {
+        return ConverterParaMinusculas(texto);
+    }
+}
+
+// See https://aka.ms/new-console-template for more information
+Console.WriteLine(ConverterTexto("Teste 123"));
+Console.WriteLine(ConverterTexto("Este 123"));
+
+2) 

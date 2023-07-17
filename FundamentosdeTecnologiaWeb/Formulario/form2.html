@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML>
+<HTML lang='PT-BR'>
+<HEAD>
+	<meta charset='UTF-8'>
+	<TITLE>Formulario2</TITLE>
+</HEAD>
+<BODY>
+	<form action='#' method='post'>
+		<fieldset>
+			<font face='Comic Sans MS'size=3>
+				<legend><font size=5><i>Dados Pessoais</i></font></legend>
+					<label for='inputnome'>Nome:</label>
+					<input id='inputnome' name='nome' placeholder='Seu nome' autofocus size=50 required>
+					<label for='inputcor'>Selecione sua cor favorita:</label>
+					<input id='inputcor' type='color'><br>
+					<label for='inputdatanasc'> Data de nascimento:</label>
+					<input id='inputdatanasc' type='date'><br>
+					<label for='inputidade'> Idade:</label>
+					<input id='inputidade' type='number' min=0 max=150 step=10><br>
+					<label for='inputradio'>Gênero:</label>
+					<input id='inputradio' type='radio' name='genero' value='Masculino'>Masculino
+					<input id='inputradio' type='radio' name='genero' value='Feminino'>Feminino<br>
+					<label for='inputemail'required> E-mail:</label>
+					<input id='inputemail' type='email'><br>
+					<label for='inputfile'> Foto:</label>
+					<input id='inputfile' type='file'><br>
+					<label for='inputsenha'> Senha:</label>
+					<input id='inputsenha' type='password'><br>
+			</font>
+		</fieldset>
+		
+			<font face='Comic Sans MS'size=3>
+				<fieldset>
+					<legend><font size=5><i>Dados Profissionais</i></font></legend>
+					<label for='inputrange'required> Faixa Salarial:</label>
+					<input id='inputrange' type='range' min=0 max=50000><br>
+					<label for='textarea' font size=5><i>Mini Curriculo</i></font></label><br>
+					<textarea id='textarea' cols=50 rows=10 placeholder="Descreva aqui..."></textarea><br>
+					<label for='select' font size=5><i>Temas de interesse:</i></font></label>
+					<select id='select' multiple size='2'>
+						<option>Música</option>
+						<option>Dança</option>
+						<option>Livros</option>
+						<option>Programação</option>
+						<option>Maquiagem</option>
+					</select>
+				</fieldset>
+				
+				<input type='checkbox' value='concordo'required><font size=2> Concordo em compartilhar as minhas informações</font><br>
+				<input type='submit' value='Enviar'>
+				<button type='reset'>Limpar</button>
+				
+			</font>
+	</form>
+</BODY>
+</HTML>

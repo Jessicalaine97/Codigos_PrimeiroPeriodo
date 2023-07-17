@@ -1,0 +1,11 @@
+﻿<!DOCTYPE html>
+<html lang ='PT-BR'>
+	<head>
+		<META charset='UTF-8'>
+		<TITLE>Aula 09.03</TITLE>
+	</head>
+	<body>
+	<!---Ver tabela ASCII -> quando quer colocar caracteres especiais dentro do html (ex: > vira &#60)--->
+	<H1 align='center'><U><Font face='Comic Sans MS'>HTML5</U><H1>
+	</body>
+</html>

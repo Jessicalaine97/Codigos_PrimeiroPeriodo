@@ -1,0 +1,35 @@
+﻿<!DOCTYPE HTML>
+<HTML lang='PT-PB'>
+
+<HEAD>
+	<meta charset='UTF-8'>
+	<TITLE>Aula Imagens</TITLE>
+</HEAD>
+
+<BODY background='imagens/fundo3.jpg'>
+	<left>
+	<!--se colocar a proporção so no width a altura se ajusta automaticamente-->
+	<!--usando a imagem na pasta-->
+	<IMG src='imagens/gif.gif' alt='Imagem ilustrando um personagem Mario' title='Mario' align='left' width='10%' height=''>Mario é um encanador junto com seu irmão Luigi.<br><br><br><br><br>
+	<!--usando a imagem da web-->
+	<!--espaços: vspace (vertical) e hspace (horizontal)-->
+	<IMG src='https://ingresso-a.akamaihd.net/b2b/production/uploads/article/image/216/imagem-destaque-novo-filme-animacao-super-mario-bros.jpg' alt='Imagem ilustrando um personagem Mario' width='10%' height='' vspace='70' hspace='70'><br>
+	<!--usando a imagem na pasta dentro da pasta-->
+	<IMG src='Imagens/supermario.jpg' alt='Imagem ilustrando um personagem Mario' width='10%' height=''>
+	</left>
+	<!--autoplay so funciona com o mute -> privacidade do usuario-->
+	<CENTER>
+		<h2>Video com a TAG video:</h2>
+			<VIDEO autoplay controls muted loop width='20%'>
+				<SOURCE SRC='VIDEO_SUPER_MARIO.MP4' type='video/mp4'>
+			</VIDEO>
+		<h2>Audio com a TAG audio:</h2>
+			<AUDIO autoplay controls muted>
+				<SOURCE src='audio_super_mario.mp3' type='audio/mp3'>
+			</AUDIO>
+		<h2>Video com a TAG embed:</h2>
+			<EMBED src='https://www.youtube.com/embed/bnYSkJSs1h0' width='50%'>
+	</CENTER>
+</BODY>
+
+</HTML>
